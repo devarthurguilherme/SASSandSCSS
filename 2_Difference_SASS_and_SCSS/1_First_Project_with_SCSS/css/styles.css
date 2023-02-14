@@ -1,0 +1,9 @@
+.container {
+  background-color: #EEE;
+  padding: 20px; }
+  .container #title {
+    background-color: #333;
+    color: #fff;
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
