@@ -1,4 +1,72 @@
-div
+div, main
     background: gray
+    p, h2
+        color: blue
+
+
+main
     p
-        color: lightblue
+        background: red
+
+li
+        color: purple
+
+ol
+    >li
+        color: red
+
+a
+    text-decoration: none
+    color: green
+    transition: .5s
+    padding: 10px
+    border: 1px solid green
+    display: block
+    width: 150px
+    text-align: center
+    border-radius: 5px
+    cursor: pointer
+
+    &:hover
+        background-color: green
+        color: white
+
+.container
+    background-color: orange
+    padding: 20px
+    margin: 20px
+
+    &Content
+        color: white
+
+.btn
+    padding: 10px 20px
+    border: 1px solid blue
+    border-radius: 5px
+    background-color: blue
+    color: white
+    cursor: pointer
+    margin: 5px
+
+    &:hover
+        background-color: transparent
+        color: blue
+
+    &Sucess
+        background-color: green
+        border-color: green
+
+        &:hover
+            color: green
+    
+    &Danger
+        background-color: red
+        border-color: red
+
+        &:hover
+            color: red
+
+
+.spacing
+    padding: 200px
+    color: white
