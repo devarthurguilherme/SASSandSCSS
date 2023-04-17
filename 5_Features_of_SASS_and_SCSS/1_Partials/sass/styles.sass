@@ -1,0 +1,59 @@
+@import 'variables'
+@import 'btn'
+@import 'mixins'
+@import 'placeHolders'
+@import 'function'
+
+
+body
+    margin: 20px
+
+.specialParagraph
+    @include special
+
+h2
+    @include special
+
+.small
+    @include testParameter(10px, red, black)
+
+.middle
+    @include testParameter(50px, blue, red)
+
+.big
+    @include testParameter(100px, purple, blue)
+
+.testBorder
+    @include testBorder(solid, red)
+
+.parametersForName
+    @include colors
+    @extend %fontPattern
+    
+.parametersForName1
+    @include colors($bg: blue, $font: yellow)
+    @extend %fontPattern
+
+.parametersForName2
+    @include colors(blue, yellow)
+
+$medida: 4
+
+.smallerContainer
+    color: red
+    width: 100px * $medida
+    @include testBorder(solid, blue, 2px)
+
+.biggerContainer
+    color: blue
+    width: 25rem * $medida / 4
+    @include testBorder(dashed, red, 3px)
+
+
+.littleCalc
+    font-size: 9px
+    color: textColor(9)
+
+.bigCalc
+    font-size: 30px
+    color: textColor(30)

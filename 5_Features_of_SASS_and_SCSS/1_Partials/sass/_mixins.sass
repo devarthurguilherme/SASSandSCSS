@@ -1,0 +1,28 @@
+@mixin special
+    color: blue
+    background-color: yellow
+    padding: 10px
+    border: 1px solid red
+    &:hover
+        color: blue
+        background-color: red
+        padding: 50px
+        border: 2px solid blue
+        cursor: pointer
+        transition: .5s
+
+@mixin borderDiv
+    border: 2px solid red
+
+@mixin testParameter($p, $c, $bc)
+    padding: $p
+    color: $c
+    background-color: $bc
+
+@mixin testBorder($style, $color, $width: 2px)
+    border: $width $style $color
+
+@mixin colors($font: #000, $bg: #fff)
+    color: $font
+    background-color: $bg
+    border: 2px dashed red

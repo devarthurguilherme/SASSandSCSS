@@ -1,0 +1,93 @@
+.btn {
+  background-color: #000;
+  color: #ddd;
+  border-radius: 5px;
+  padding: 12px 10px;
+  cursor: pointer; }
+
+.parametersForName, .parametersForName1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.5rem; }
+
+body {
+  margin: 20px; }
+
+.specialParagraph {
+  color: blue;
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid red; }
+  .specialParagraph:hover {
+    color: blue;
+    background-color: red;
+    padding: 50px;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: 0.5s; }
+
+h2 {
+  color: blue;
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid red; }
+  h2:hover {
+    color: blue;
+    background-color: red;
+    padding: 50px;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: 0.5s; }
+
+.small {
+  padding: 10px;
+  color: red;
+  background-color: black; }
+
+.middle {
+  padding: 50px;
+  color: blue;
+  background-color: red; }
+
+.big {
+  padding: 100px;
+  color: purple;
+  background-color: blue; }
+
+.testBorder {
+  border: 2px solid red; }
+
+.parametersForName {
+  color: #000;
+  background-color: #fff;
+  border: 2px dashed red; }
+
+.parametersForName1 {
+  color: yellow;
+  background-color: blue;
+  border: 2px dashed red; }
+
+.parametersForName2 {
+  color: blue;
+  background-color: yellow;
+  border: 2px dashed red; }
+
+.smallerContainer {
+  color: red;
+  width: 400px;
+  border: 2px solid blue; }
+
+.biggerContainer {
+  color: blue;
+  width: 25rem;
+  border: 3px dashed red; }
+
+.littleCalc {
+  font-size: 9px;
+  color: blue; }
+
+.bigCalc {
+  font-size: 30px;
+  color: red; }
+
+/*# sourceMappingURL=styles.css.map */

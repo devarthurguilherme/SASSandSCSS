@@ -66,6 +66,20 @@ a
         &:hover
             color: red
 
+%baseTitleStyle
+    border-bottom: 2px dotted red
+    padding: 10px
+    background-color: blue
+    color: white
+    text-align: center
+
+.title
+    font-size: 40px
+    @extend %baseTitleStyle
+
+.subtitle
+    font-size: 25px
+    @extend %baseTitleStyle
 
 .spacing
     padding: 200px

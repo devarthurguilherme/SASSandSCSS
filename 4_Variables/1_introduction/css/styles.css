@@ -1,0 +1,22 @@
+h1 {
+  color: pink;
+  border: 2px solid red; }
+
+p {
+  color: pink;
+  border: 2px solid red;
+  font-size: 4rem;
+  margin: 12rem;
+  padding: 6rem;
+  background: blue; }
+
+a {
+  color: pink;
+  border: 2px solid red; }
+
+div p {
+  background-color: blue;
+  color: white;
+  border: 10px solid pink; }
+
+/*# sourceMappingURL=styles.css.map */

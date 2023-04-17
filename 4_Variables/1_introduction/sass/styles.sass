@@ -1,0 +1,26 @@
+@import "variables"
+
+h1
+    color: $primary-color
+    border: $border
+
+p
+    color: $primary-color
+    border: $border
+    font-size: #{$mx + $mx}
+    margin: #{$mx + 10rem}
+    padding: #{$mj + $mx}
+    background: blue
+
+a
+    color: $primary-color
+    border: $border
+
+div
+    p
+        //Local Scope
+        $text-color: white
+        $border: 10px solid pink
+        background-color: $background-color
+        color: $text-color
+        border: $border

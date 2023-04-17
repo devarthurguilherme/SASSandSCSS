@@ -56,6 +56,19 @@ a {
     .btnDanger:hover {
       color: red; }
 
+.title, .subtitle {
+  border-bottom: 2px dotted red;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center; }
+
+.title {
+  font-size: 40px; }
+
+.subtitle {
+  font-size: 25px; }
+
 .spacing {
   padding: 200px;
   color: white; }
