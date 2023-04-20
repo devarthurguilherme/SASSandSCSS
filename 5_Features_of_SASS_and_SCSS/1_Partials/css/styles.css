@@ -84,10 +84,12 @@ h2 {
 
 .littleCalc {
   font-size: 9px;
-  color: blue; }
+  color: blue;
+  border: 3px solid green; }
 
 .bigCalc {
   font-size: 30px;
-  color: red; }
+  color: red;
+  border: 2px solid blue; }
 
 /*# sourceMappingURL=styles.css.map */

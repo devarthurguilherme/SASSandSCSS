@@ -6,3 +6,16 @@
     @else 
         $color: blue
     @return $color
+
+@function testBorder($variation: 1)
+    
+    $border: none
+
+    @if $variation == 1
+        $border: 1px solid red
+    @else if $variation == 2
+        $border: 2px solid blue
+    @else 
+        $border: 3px solid green
+
+    @return $border
