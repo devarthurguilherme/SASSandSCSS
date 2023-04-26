@@ -10,7 +10,10 @@
 @function testBorder($variation: 1)
     
     $border: none
-
+    $var: 4
+    @if $variation > $var
+        //@error "Please, insert a value smaller than 3"
+        @warn "Please, the max number the variation is #{$var}"
     @if $variation == 1
         $border: 1px solid red
     @else if $variation == 2
