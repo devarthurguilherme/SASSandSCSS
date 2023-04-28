@@ -24,4 +24,19 @@
     @return $border
 
 @function customerWidth($width: 200px, $division: 2)
+
+    @debug "The value of the division is: #{$width / $division}"
+
     @return $width / $division
+
+
+@function toCalc($a, $b)
+    $result: 0
+    @if $a > $b
+        $result: red
+    @else if $a == $b
+        $result: blue
+    @else 
+        $result: green
+
+    @return $result
