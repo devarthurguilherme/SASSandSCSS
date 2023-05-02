@@ -74,3 +74,10 @@ $medida: 4
 .test3
     width: customerWidth($division: 1)
     background-color: toCalc(2, 3)
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
