@@ -116,4 +116,16 @@ h2 {
   font-size: 100px;
   line-height: 120px; }
 
+.p-1 {
+  color: aqua;
+  background-color: black; }
+
+.p-2 {
+  color: blue;
+  background-color: black; }
+
+.p-3 {
+  color: red;
+  background-color: black; }
+
 /*# sourceMappingURL=styles.css.map */
