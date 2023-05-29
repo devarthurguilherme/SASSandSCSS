@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222;
+}
+
+main {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #DDD;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 16px;
+  color: #CCC;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  padding: 15px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+}
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+#navbar ul li {
+  margin: 0 10px;
+}
+#navbar ul a {
+  color: #fff;
+  transition: 0.5s;
+}
+#navbar ul a:hover {
+  color: #DDD;
+}
+
+button {
+  padding: 20px 40px;
+  color: white;
+  background-color: #DDD;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  color: #222;
+  background-color: white;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
