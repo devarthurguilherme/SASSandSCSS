@@ -1,0 +1,8 @@
+@use 'sass:color'
+
+$color-adjust: color.adjust(#6B717f, $red: 25, $blue: 10)
+
+.test-module 
+    color: $color-adjust
+
+@debug color.blue($color-adjust)
