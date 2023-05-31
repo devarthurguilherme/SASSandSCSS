@@ -1,4 +1,6 @@
 @use 'sass:color'
+@use 'sass:list'
+@use 'sass:map'
 
 $color-adjust: color.adjust(#6B717f, $red: 25, $blue: 10)
 
@@ -6,3 +8,60 @@ $color-adjust: color.adjust(#6B717f, $red: 25, $blue: 10)
     color: $color-adjust
 
 @debug color.blue($color-adjust)
+
+.test-module2
+    color: color.mix(red, blue)
+
+.test-module3
+    color: desaturate(red, 60%)
+
+.test-module4
+    background-color: red
+
+.test-module4:hover
+    background-color: lighten(red, 8%)
+
+$list: 1rem 2rem 3rem
+
+@debug $list
+
+$list: list.append($list, 40px)
+
+@debug $list
+
+@debug list.index($list, 2rem)
+
+$list: 1rem 2rem 3rem
+$list2: 30px, 40px, 60px
+@debug $list2
+
+$list3: list.join($list, $list2)
+@debug $list3
+
+@debug list.length($list)
+@debug list.length($list2)
+@debug list.length($list3)
+
+@debug list.nth($list3, 4)
+
+$font-size-text: list.nth($list3, 2)
+
+p
+    font-size: $font-size-text
+
+$m: ('font': 3px, 'color':blue, 'bold': false)
+$n: ('border': 2px solid red, 'transition': 1s )
+
+@debug $m
+@debug $n
+
+$x: map.merge($m, $n)
+
+@debug $x
+
+$border-title: map.get($x, 'border')
+
+h1
+    border: $border-title
+
+@debug map.has-key($x, 'color')

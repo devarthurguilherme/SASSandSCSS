@@ -2,4 +2,28 @@
   color: #847189;
 }
 
+.test-module2 {
+  color: purple;
+}
+
+.test-module3 {
+  color: #b34d4d;
+}
+
+.test-module4 {
+  background-color: red;
+}
+
+.test-module4:hover {
+  background-color: #ff2929;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  border: 2px solid red;
+}
+
 /*# sourceMappingURL=styles.css.map */
