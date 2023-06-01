@@ -1,6 +1,9 @@
 @use 'sass:color'
 @use 'sass:list'
 @use 'sass:map'
+@use 'sass:math'
+@use 'sass:meta'
+@use 'sass:string'
 
 $color-adjust: color.adjust(#6B717f, $red: 25, $blue: 10)
 
@@ -65,3 +68,36 @@ h1
     border: $border-title
 
 @debug map.has-key($x, 'color')
+
+$pi : math.$pi
+
+@debug $pi
+
+$z: 3.5
+@debug math.ceil($z)
+@debug math.floor($z)
+
+$a: 1, 2, 3, 8
+@debug math.max($a...)
+@debug math.min($a...)
+
+@debug math.random()
+
+@debug meta.global-variable-exists('a')
+@debug meta.inspect($a)
+
+
+@mixin testing
+    padding: 0
+    margin: 0
+
+@debug meta.type-of('testing')
+@debug meta.type-of(#fff)
+
+$sentence: "Arthur Guilherme de Souza Silva"
+
+@debug string.index($sentence, "de")
+@debug string.length($sentence)
+
+@debug string.to-lower-case($sentence)
+@debug string.to-upper-case($sentence)
