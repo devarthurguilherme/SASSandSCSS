@@ -1,0 +1,80 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.header
+    background-color: variables.$bg-color
+
+    &-top
+        background-color: variables.$secundary-bg-color
+        color: variables.$light-color
+
+        &-container
+            @include layouts-mixins.center-content
+            padding: 1.12rem 0
+
+            span
+                margin-right: 1.4rem
+
+            i
+                margin-right: .52rem
+
+            a
+                color: variables.$light-color
+
+.main-header
+    &-container
+        @include layouts-mixins.center-content
+        padding: 1.92rem 0
+
+        a, span, i
+            color: #fff
+
+        #brand
+            font-weight: 900
+            font-size: 4.2rem
+
+            i
+                color: variables.$primary-color
+                font-size: 2rem
+
+        #search-form
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 45%
+
+            input
+                height: 4rem
+
+            #search
+                @include layouts-mixins.rounded-input
+                width: 60%
+
+        .header-actions-menu
+            display: flex
+            align-items: center
+            
+            .wishlist-container, .header-cart-container
+                @include layouts-mixins.header-icon
+
+.header-bottom
+    background-color: variables.$light-color
+    border-bottom: .2rem solid variables.$section-bg-color
+    border-top: .3rem solid variables.$primary-color
+
+    ul
+        @include layouts-mixins.center-content
+        justify-content: left
+        padding: 1rem 0
+
+        li
+            margin-right: 1.8rem
+
+            a
+                color: variables.$link-color
+                border-bottom: 2px solid transparent
+
+                &:hover
+                    color: variables.$primary-color
+                    border-bottom: variables.$primary-color
