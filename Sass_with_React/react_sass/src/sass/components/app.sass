@@ -1,3 +1,44 @@
+@use './_variables'
+@use './_mixins'
+@use './sidebar'
+@use './socialnetworks'
+@use './informationContainer'
+
 #container
+    max-width: 120rem
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr))
+    margin: 0 auto
+    padding: variables.$paddingDefault
+    background-color: variables.$darkGrey
+    border-radius: variables.$container-border-radius
+        
+    @include mixins.tablet
+        grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr))
+
+    @include mixins.desktop
+        grid-template-columns: 1fr 2fr
+        grid-template-areas: "sidebar main"
+        gap: 1.5rem
+
+        
+    
+        #container__title
+            grid-area: title
+            color: red
+
+        #main-content
+            grid-area: main
+
+        #side-bar
+            grid-area: sidebar
+
     h1
-        color: blue
+        font-size: clamp(3.6rem, 3.8vw, 4.3rem)
+        width: 100%
+        
+        margin-bottom: 4rem
+        white-space: nowrap
+        
+
+        

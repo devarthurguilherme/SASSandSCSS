@@ -1,0 +1,20 @@
+@use 'variables'
+
+@mixin tablet
+    @media (min-width: 480px)
+        @content
+
+@mixin desktop
+    @media (min-width: 960px)
+        @content
+
+@mixin btn
+    padding: 2rem 4rem
+    color: variables.$color6Pallet
+    background-color: variables.$color4Pallet
+    border-radius: 4rem
+
+@mixin center-flex
+    display: flex
+    justify-content: center
+    align-items: center

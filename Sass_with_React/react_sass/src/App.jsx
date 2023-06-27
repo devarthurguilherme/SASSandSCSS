@@ -1,11 +1,14 @@
 import './sass/components/app.sass'
-
+/*Components*/
+import SideBar from './components/SideBar';
+import MainContent from './components/MainContent';
 function App() {
 
   return (
     <>
       <div id="container">
-        <h1>React + SASS</h1>
+        <SideBar/>
+        <MainContent />
       </div>
     </>
   )
